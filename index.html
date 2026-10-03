@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CHARISH JOY — Official Artist Website</title>
+  <meta name="description" content="Official website of independent artist CHARISH JOY. Original music in English, Korean and Tagalog." />
+  <meta name="theme-color" content="#1f2a38" />
+  <meta property="og:title" content="CHARISH JOY — Official Artist Website" />
+  <meta property="og:description" content="Songs for the feelings we don’t always know how to say." />
+  <meta property="og:image" content="profile.jpg" />
+  <style>
+    :root{--ivory:#f7f0e8;--paper:#fffaf4;--ink:#1f2a38;--brown:#3c2c2b;--rose:#a96862;--gold:#c7a46a;--line:rgba(60,44,43,.16)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--ivory);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}
+    nav{position:sticky;top:0;z-index:10;background:rgba(247,240,232,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .navin{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:Georgia,serif;letter-spacing:.18em;font-size:17px}.navlinks{display:flex;gap:22px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}.navlinks a:hover{opacity:.55}
+    .hero{min-height:76vh;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;padding:72px 0 58px}.eyebrow{text-transform:uppercase;letter-spacing:.24em;font-size:12px;color:var(--rose);font-weight:700}.hero h1{font-family:Georgia,serif;font-size:clamp(58px,8vw,104px);font-weight:400;line-height:.88;letter-spacing:-.045em;margin:18px 0 24px}.lead{font-family:Georgia,serif;font-size:clamp(21px,3vw,32px);line-height:1.25;color:var(--brown);max-width:680px}.sub{max-width:610px;line-height:1.75;color:#5e626a}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;border:1px solid var(--ink);font-weight:700;font-size:14px}.btn.primary{background:var(--ink);color:white}.btn:hover{transform:translateY(-1px)}
+    .portrait{position:relative}.portrait:before{content:"";position:absolute;inset:9% -8% -7% 14%;border:1px solid var(--gold);border-radius:50% 50% 44% 56%/44% 55% 45% 56%}.portrait img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:48% 48% 18px 18px;filter:saturate(.84) contrast(.98);box-shadow:0 28px 70px rgba(31,42,56,.13)}
+    section{padding:88px 0;border-top:1px solid var(--line)}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:32px}.sectionhead h2{font-family:Georgia,serif;font-size:clamp(38px,5vw,58px);font-weight:400;margin:0}.sectionhead p{max-width:460px;line-height:1.65;color:#676b71}
+    .feature{background:linear-gradient(135deg,#273444,#392d30);color:white;border-radius:28px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;box-shadow:0 24px 70px rgba(31,42,56,.14)}.feature small{letter-spacing:.18em;text-transform:uppercase;color:#e3cfae}.feature h3{font-family:Georgia,serif;font-size:clamp(36px,6vw,68px);font-weight:400;margin:12px 0}.feature p{color:#e9e5df}.date{font-family:Georgia,serif;font-size:28px;color:#e3cfae;white-space:nowrap}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:28px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between}.tag{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--rose);font-weight:700}.card h3{font-family:Georgia,serif;font-size:28px;font-weight:400;margin:12px 0}.card p{margin:0;color:#6c6b6c;line-height:1.6}.mini{margin-top:20px;font-size:13px;font-weight:700}
+    .korean{background:#efe5da}.songs{display:grid;gap:0;border-top:1px solid var(--line)}.song{display:grid;grid-template-columns:48px 1fr auto;gap:18px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}.songnum{font-family:Georgia,serif;color:var(--gold)}.songtitle{font-family:Georgia,serif;font-size:22px}.status{font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:#777}
+    .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.about h2{font-family:Georgia,serif;font-size:50px;font-weight:400;margin:0}.about p{font-size:18px;line-height:1.85;color:#555b63;margin-top:0}
+    .socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.socials a{padding:11px 16px;border:1px solid var(--line);border-radius:999px;font-size:13px;font-weight:700;background:rgba(255,255,255,.35)}
+    footer{padding:46px 0 60px;border-top:1px solid var(--line)}.foot{display:flex;justify-content:space-between;gap:24px;align-items:center;color:#6b6d72;font-size:13px}.foot strong{font-family:Georgia,serif;color:var(--ink);letter-spacing:.14em}
+    @media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:52px;gap:36px}.portrait{width:min(88%,420px);margin:auto}.feature{grid-template-columns:1fr}.date{font-size:22px}.grid{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:24px}.sectionhead{display:block}.song{grid-template-columns:32px 1fr}.status{grid-column:2}.foot{display:block}.foot div+div{margin-top:10px}}
+  </style>
+</head>
+<body>
+<nav><div class="wrap navin"><a class="brand" href="#top">CHARISH JOY</a><div class="navlinks"><a href="#music">Music</a><a href="#korean">Korean</a><a href="#about">About</a><a href="#follow">Follow</a></div></div></nav>
+<main id="top">
+  <div class="wrap hero">
+    <div><div class="eyebrow">Independent Artist · @itscharishjoy</div><h1>CHARISH<br>JOY</h1><div class="lead">Songs for the feelings we don’t always know how to say.</div><p class="sub">Original music in English, Korean and Tagalog — intimate stories, cinematic emotion, and melodies made to stay with you.</p><div class="cta"><a class="btn primary" href="https://open.spotify.com/artist/0ElB32zDaljELBKAl6VXmA" target="_blank" rel="noopener">Listen on Spotify</a><a class="btn" href="#music">Explore the music</a></div></div>
+    <div class="portrait"><img src="profile.jpg" alt="CHARISH JOY artist portrait"></div>
+  </div>
+
+  <section id="music"><div class="wrap"><div class="sectionhead"><h2>Latest music</h2><p>Stories about love, distance, timing, and the words that arrive after the moment has passed.</p></div>
+    <article class="feature"><div><small>Upcoming release</small><h3>Still Here, Not the Same</h3><p>A new CHARISH JOY single · October 7, 2026</p></div><div class="date">07 · 10 · 26</div></article>
+    <div class="grid" style="margin-top:18px"><article class="card"><div><div class="tag">Released</div><h3>We Both Know</h3><p>An intimate story-pop single by CHARISH JOY.</p></div><a class="mini" href="https://open.spotify.com/artist/0ElB32zDaljELBKAl6VXmA" target="_blank" rel="noopener">LISTEN ON SPOTIFY →</a></article><article class="card"><div><div class="tag">Original music</div><h3>More stories are coming.</h3><p>Follow @itscharishjoy for new songs, lyric stories, and release updates.</p></div><a class="mini" href="#follow">FOLLOW CHARISH JOY →</a></article></div>
+  </div></section>
+
+  <section id="korean" class="korean"><div class="wrap"><div class="sectionhead"><h2>Korean songs</h2><p>CHARISH JOY in another language, with the same emotional storytelling at the center.</p></div><div class="songs">
+    <div class="song"><div class="songnum">01</div><div class="songtitle">아무 일도 없었던 것처럼</div><div class="status">Coming soon</div></div>
+    <div class="song"><div class="songnum">02</div><div class="songtitle">네가 온 이유</div><div class="status">Coming soon</div></div>
+    <div class="song"><div class="songnum">03</div><div class="songtitle">그래도 당신이라서</div><div class="status">Coming soon</div></div>
+    <div class="song"><div class="songnum">04</div><div class="songtitle">다음 계절에 우리</div><div class="status">Coming soon</div></div>
+  </div></div></section>
+
+  <section id="about"><div class="wrap about"><h2>About<br>CHARISH JOY</h2><div><p>CHARISH JOY is an independent artist creating intimate cinematic story-pop: songs built around one clear feeling, one human story, and the lines we wish we had said out loud.</p><p>Her growing catalog moves across English, Korean and Tagalog while keeping the same heart — emotionally direct songwriting and warm, cinematic storytelling.</p></div></div></section>
+
+  <section id="follow"><div class="wrap"><div class="sectionhead"><h2>Stay close.</h2><p>New music, lyric stories and release updates from CHARISH JOY.</p></div><div class="socials"><a href="https://open.spotify.com/artist/0ElB32zDaljELBKAl6VXmA" target="_blank" rel="noopener">Spotify</a><a href="https://www.instagram.com/itscharishjoy/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@itscharishjoy" target="_blank" rel="noopener">TikTok</a><a href="https://www.youtube.com/@itscharishjoy" target="_blank" rel="noopener">YouTube</a><a href="https://www.facebook.com/itscharishjoy" target="_blank" rel="noopener">Facebook</a></div></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>CHARISH JOY</strong> · Official Artist Website</div><div>© 2026 CHARISH JOY · @itscharishjoy</div></div></footer>
+</body></html>
