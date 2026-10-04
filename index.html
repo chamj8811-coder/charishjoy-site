@@ -1,154 +1,30 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CHARISH JOY — Official Artist Website</title>
-  <meta name="description" content="Official website of independent artist CHARISH JOY. Original music in English, Korean and Tagalog." />
-  <meta name="theme-color" content="#F2EEE8" />
-  <meta property="og:title" content="CHARISH JOY — Official Artist Website" />
-  <meta property="og:description" content="Songs for the feelings we don’t always know how to say." />
-  <meta property="og:image" content="profile.jpg" />
-  <style>
-    :root{--ivory:#f7f0e8;--paper:#fffaf4;--ink:#1f2a38;--brown:#3c2c2b;--rose:#a96862;--gold:#c7a46a;--line:rgba(60,44,43,.16)}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--ivory);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}
-    nav{position:sticky;top:0;z-index:10;background:rgba(247,240,232,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-    .navin{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:Georgia,serif;letter-spacing:.18em;font-size:17px}.navlinks{display:flex;gap:22px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}.navlinks a:hover{opacity:.55}
-    .hero{min-height:76vh;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;padding:72px 0 58px}.eyebrow{text-transform:uppercase;letter-spacing:.24em;font-size:12px;color:var(--rose);font-weight:700}.hero h1{font-family:Georgia,serif;font-size:clamp(58px,8vw,104px);font-weight:400;line-height:.88;letter-spacing:-.045em;margin:18px 0 24px}.lead{font-family:Georgia,serif;font-size:clamp(21px,3vw,32px);line-height:1.25;color:var(--brown);max-width:680px}.sub{max-width:610px;line-height:1.75;color:#5e626a}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;border:1px solid var(--ink);font-weight:700;font-size:14px}.btn.primary{background:var(--ink);color:white}.btn:hover{transform:translateY(-1px)}
-    .portrait{position:relative;width:min(100%,300px);justify-self:center}.portrait:before{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--gold);border-radius:24px}.portrait img{display:block;position:relative;width:100%;height:auto;border-radius:20px;filter:saturate(.84) contrast(.98);box-shadow:0 28px 70px rgba(31,42,56,.13)}
-    section{padding:88px 0;border-top:1px solid var(--line)}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:32px}.sectionhead h2{font-family:Georgia,serif;font-size:clamp(38px,5vw,58px);font-weight:400;margin:0}.sectionhead p{max-width:460px;line-height:1.65;color:#676b71}
-    .feature{background:linear-gradient(135deg,#273444,#392d30);color:white;border-radius:28px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;box-shadow:0 24px 70px rgba(31,42,56,.14)}.feature small{letter-spacing:.18em;text-transform:uppercase;color:#e3cfae}.feature h3{font-family:Georgia,serif;font-size:clamp(36px,6vw,68px);font-weight:400;margin:12px 0}.feature p{color:#e9e5df}.date{font-family:Georgia,serif;font-size:28px;color:#e3cfae;white-space:nowrap}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:28px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between}.tag{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--rose);font-weight:700}.card h3{font-family:Georgia,serif;font-size:28px;font-weight:400;margin:12px 0}.card p{margin:0;color:#6c6b6c;line-height:1.6}.mini{margin-top:20px;font-size:13px;font-weight:700}
-    .korean{background:#efe5da}.songs{display:grid;gap:0;border-top:1px solid var(--line)}.song{display:grid;grid-template-columns:48px 1fr auto;gap:18px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}.songnum{font-family:Georgia,serif;color:var(--gold)}.songtitle{font-family:Georgia,serif;font-size:22px}.status{font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:#777}
-    .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.about h2{font-family:Georgia,serif;font-size:50px;font-weight:400;margin:0}.about p{font-size:18px;line-height:1.85;color:#555b63;margin-top:0}
-    .socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.socials a{padding:11px 16px;border:1px solid var(--line);border-radius:999px;font-size:13px;font-weight:700;background:rgba(255,255,255,.35)}
-    footer{padding:46px 0 60px;border-top:1px solid var(--line)}.foot{display:flex;justify-content:space-between;gap:24px;align-items:center;color:#6b6d72;font-size:13px}.foot strong{font-family:Georgia,serif;color:var(--ink);letter-spacing:.14em}
-    @media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:52px;gap:36px}.portrait{width:min(76%,260px);margin:auto}.feature{grid-template-columns:1fr}.date{font-size:22px}.grid{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:24px}.sectionhead{display:block}.song{grid-template-columns:32px 1fr}.status{grid-column:2}.foot{display:block}.foot div+div{margin-top:10px}}
-  
-    /* Artist identity: plum, parchment and champagne */
-    :root{--ivory:#171219;--paper:#231c25;--ink:#f4eade;--brown:#e5d6c7;--rose:#d7b99a;--gold:#c6a477;--line:rgba(215,185,154,.20)}
-    body{background:radial-gradient(ellipse at 85% 10%,rgba(111,63,85,.24),transparent 45%),var(--ivory);color:var(--ink)}
-    .wrap{width:min(1120px,calc(100% - 48px))}
-    nav{background:rgba(23,18,25,.92);border-color:var(--line)}
-    .navin{height:80px}.brand{font-size:16px;letter-spacing:.24em}.navlinks{font-size:11px;gap:30px;letter-spacing:.18em}
-    .hero{min-height:720px;padding:100px 0 96px;gap:72px;grid-template-columns:1.25fr .75fr}
-    .eyebrow{font-size:10px;letter-spacing:.27em;color:var(--gold)}
-    .hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(64px,9vw,120px);line-height:.94;font-weight:400;letter-spacing:-.055em;margin:28px 0 32px}
-    .lead{font-size:clamp(22px,2.5vw,30px);line-height:1.4;color:#e7d8c9;max-width:520px}
-    .sub{color:#ac9fa9;font-size:14px;line-height:1.9;max-width:470px;margin-top:24px}
-    .cta{gap:16px;margin-top:34px}.btn{border-radius:3px;padding:15px 21px;font-size:11px;letter-spacing:.09em;border-color:var(--line);transition:background .2s,transform .2s}
-    .btn.primary{background:var(--gold);color:#211922;border-color:var(--gold)}.btn.primary:hover{background:#dfc39d}.btn:hover{transform:translateY(-2px)}
-    .portrait{width:min(100%,300px);padding:12px;border:1px solid var(--line);background:#211a22}
-    .portrait:before{inset:24px -18px -18px 24px;border-radius:0;border-color:rgba(198,164,119,.45)}
-    .portrait img{border-radius:0;width:100%;height:auto;filter:saturate(.7);box-shadow:none}
-    section{padding:100px 0}
-    .sectionhead{margin-bottom:40px}.sectionhead h2{font-size:clamp(38px,5vw,60px);letter-spacing:-.04em}.sectionhead p{font-size:14px;color:#b4a6b0;line-height:1.85;max-width:390px}
-    .feature{background:linear-gradient(120deg,#352430,#241d26);border:1px solid rgba(198,164,119,.32);border-radius:4px;box-shadow:none;padding:48px;position:relative;overflow:hidden}
-    .feature:before{content:"";position:absolute;top:0;left:0;width:3px;height:100%;background:var(--gold)}
-    .feature small{color:var(--gold);font-size:10px;letter-spacing:.24em}.feature h3{font-size:clamp(34px,5vw,58px);letter-spacing:-.03em;color:var(--ink)}.feature p{font-size:13px;color:#bfaeba}.date{font-size:23px;color:var(--gold);letter-spacing:.08em}
-    .grid{gap:20px}.card{border-radius:4px;background:rgba(35,28,37,.72);padding:32px;min-height:240px;border-color:var(--line)}
-    .tag{color:var(--gold);font-size:10px;letter-spacing:.22em}.card h3{font-size:32px;color:var(--ink)}.card p{color:#b4a6b0;font-size:14px}.mini{color:var(--gold);font-size:11px;letter-spacing:.12em}
-    .socials{gap:10px}.socials a{border-radius:3px;background:transparent;border-color:var(--line);color:#ead8c1;font-size:11px;font-weight:500;padding:12px 15px;transition:background .2s,border-color .2s}
-    .socials a:hover{background:rgba(198,164,119,.12);border-color:var(--gold)}
-    .korean{background:#f0e6da;color:#2a202b;border-color:#d8c6b6}
-    .korean .sectionhead p{color:#776775}.korean .songs,.korean .song{border-color:rgba(54,35,48,.16)}
-    .song{padding:25px 0;grid-template-columns:58px 1fr auto}.songnum{color:#9b744f;font-size:16px}.songtitle{font-size:24px}.status{color:#8b736e;font-size:9px;letter-spacing:.18em}
-    .about{gap:80px}.about h2{font-size:56px;line-height:1.1;letter-spacing:-.04em}.about p{font-size:16px;color:#c1b3bc;line-height:1.95}
-    footer{padding:38px 0 46px}.foot{font-size:11px;color:#978995}.foot strong{color:var(--gold);font-size:13px}
-    a:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
-    @media(max-width:760px){.wrap{width:calc(100% - 40px)}.navin{height:66px}.brand{font-size:13px}.hero{min-height:auto;grid-template-columns:1fr;padding:60px 0 70px;gap:48px}.hero h1{font-size:clamp(64px,18vw,92px)}.portrait{width:min(76%,260px);margin:auto}.lead{font-size:24px}.cta{gap:10px}.btn{font-size:10px;padding:14px 16px}section{padding:68px 0}.feature{padding:30px 26px;grid-template-columns:1fr;gap:16px}.feature h3{font-size:36px}.date{font-size:18px}.card{padding:26px;min-height:220px}.about{gap:26px}.about h2{font-size:44px}.song{grid-template-columns:32px 1fr;gap:12px;padding:22px 0}.songtitle{font-size:21px}.status{grid-column:2}.sectionhead p{margin-top:18px}.foot{line-height:1.8}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.socials a{transition:none}}
-
-  
-    /* Light parchment edition */
-    :root{--ivory:#f8f3ec;--paper:#fffdf9;--ink:#392b3b;--brown:#574452;--rose:#8c655d;--gold:#937044;--line:rgba(81,57,69,.18)}
-    body{background:radial-gradient(ellipse at 85% 10%,rgba(203,174,146,.16),transparent 45%),var(--ivory);color:var(--ink)}
-    nav{background:rgba(248,243,236,.94)}
-    .lead{color:#574452}.sub{color:#776b72}
-    .btn.primary{background:#392b3b;color:#fff8ee;border-color:#392b3b}.btn.primary:hover{background:#574052}
-    .portrait{background:#fffdf9}.portrait:before{border-color:rgba(147,112,68,.45)}
-    .sectionhead p{color:#776b72}
-    .feature{background:linear-gradient(120deg,#eee2d5,#f4ebe3);border-color:rgba(147,112,68,.30)}
-    .feature h3{color:#392b3b}.feature p{color:#75636e}
-    .card{background:rgba(255,253,249,.9)}.card p{color:#776b72}
-    .socials a{color:#574452}.socials a:hover{background:rgba(147,112,68,.08)}
-    .korean{background:#eee4d9;color:#392b3b}
-    .about p{color:#6e606b}.foot{color:#776b72}
-
-  
-    /* Fine-line artist details */
-    .hero{position:relative}
-    .hero:before{content:"";position:absolute;top:30px;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(147,112,68,.45),transparent);pointer-events:none}
-    .hero:after{content:"◆";position:absolute;bottom:20px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--gold);pointer-events:none}
-    .eyebrow{display:flex;align-items:center;gap:14px}
-    .eyebrow:before{content:"";width:36px;height:1px;background:var(--gold);flex-shrink:0}
-    .sectionhead h2:after{content:"";display:block;width:68px;height:1px;background:var(--gold);margin-top:20px}
-    .portrait{outline:1px solid rgba(147,112,68,.28);outline-offset:6px}
-    .feature{outline:1px solid rgba(147,112,68,.16);outline-offset:5px}
-    .card{position:relative}
-    .card:before{content:"";position:absolute;top:12px;left:12px;width:24px;height:24px;border-top:1px solid rgba(147,112,68,.55);border-left:1px solid rgba(147,112,68,.55);pointer-events:none}
-    .card:after{content:"";position:absolute;bottom:12px;right:12px;width:24px;height:24px;border-bottom:1px solid rgba(147,112,68,.55);border-right:1px solid rgba(147,112,68,.55);pointer-events:none}
-    .korean{position:relative}
-    .korean:before,.korean:after{content:"";position:absolute;left:24px;right:24px;height:1px;background:rgba(147,112,68,.23);pointer-events:none}
-    .korean:before{top:10px}.korean:after{bottom:10px}
-    .songnum{font-size:12px;width:28px;height:28px;border:1px solid rgba(147,112,68,.30);border-radius:50%;display:flex;align-items:center;justify-content:center}
-    .about h2:after{content:"";display:block;width:68px;height:1px;background:var(--gold);margin-top:24px}
-    footer{position:relative}
-    footer:before{content:"◆";position:absolute;top:-7px;left:50%;transform:translateX(-50%);background:var(--ivory);padding:0 14px;color:var(--gold);font-size:9px}
-    @media(max-width:760px){.hero:before{top:18px}.hero:after{bottom:18px}.eyebrow{gap:10px;font-size:9px;letter-spacing:.18em}.eyebrow:before{width:22px}}
-
-  
-    /* CHARISH JOY Artist Brand Identity v1.0 */
-    :root{--ivory:#F2EEE8;--paper:#F2EEE8;--ink:#151A22;--brown:#46566A;--rose:#8E5661;--gold:#8797A8;--line:rgba(70,86,106,.22)}
-    body{background:radial-gradient(ellipse at 85% 10%,rgba(135,151,168,.12),transparent 45%),#F2EEE8;color:#151A22}
-    nav{background:rgba(242,238,232,.95)}
-    .brand,.foot strong{letter-spacing:.24em;color:#151A22}
-    .hero h1{letter-spacing:.035em;font-size:clamp(58px,7.7vw,104px)}
-    .eyebrow,.tag{color:#8E5661}
-    .lead,.sub,.sectionhead p,.card p,.about p,.foot{color:#46566A}
-    .btn.primary{background:#151A22;color:#F2EEE8;border-color:#151A22}.btn.primary:hover{background:#46566A}
-    .portrait{background:#F2EEE8;outline-color:rgba(135,151,168,.42)}.portrait:before{border-color:#8797A8}
-    .feature{background:linear-gradient(120deg,rgba(135,151,168,.17),rgba(142,86,97,.07));border-color:rgba(70,86,106,.26);outline-color:rgba(135,151,168,.25)}
-    .feature h3{color:#151A22}.feature small,.date,.mini{color:#8E5661}.feature p{color:#46566A}
-    .card{background:rgba(242,238,232,.65)}
-    .card:before,.card:after{border-color:#8797A8}
-    .socials a{color:#46566A}.socials a:hover{background:rgba(135,151,168,.12);border-color:#46566A}
-    .korean{background:#e6e7e5;color:#151A22;border-color:var(--line)}
-    .korean .sectionhead p,.status{color:#46566A}.korean .songs,.korean .song{border-color:var(--line)}
-    .korean:before,.korean:after{background:rgba(135,151,168,.35)}
-    .songnum{color:#8E5661;border-color:rgba(135,151,168,.5)}
-    .hero:before{background:linear-gradient(90deg,transparent,#8797A8,transparent)}
-    .hero:after,footer:before{content:"";width:48px;height:1px;padding:0;background:#8797A8}
-    footer:before{top:-1px}
-    @media(max-width:760px){.hero h1{font-size:clamp(54px,15vw,84px)}}
-
-  </style>
-</head>
-<body>
-<nav><div class="wrap navin"><a class="brand" href="#top">CHARISH JOY</a><div class="navlinks"><a href="#music">Music</a><a href="#korean">Korean</a><a href="#about">About</a><a href="#follow">Follow</a></div></div></nav>
-<main id="top">
-  <div class="wrap hero">
-    <div><div class="eyebrow">Intimate Cinematic Story-Pop · @itscharishjoy</div><h1>CHARISH<br>JOY</h1><div class="lead">Songs for the feelings we don’t always know how to say.</div><p class="sub">Original music in English, Korean and Tagalog — intimate stories, cinematic emotion, and melodies made to stay with you.</p><div class="cta"><a class="btn primary" href="https://distrokid.com/hyperfollow/charishjoy/we-both-know/" target="_blank" rel="noopener">Choose your music platform</a><a class="btn" href="#music">Explore the music</a></div></div>
-    <div class="portrait"><img src="profile.jpg" alt="CHARISH JOY artist portrait"></div>
-  </div>
-
-  <section id="music"><div class="wrap"><div class="sectionhead"><h2>Latest music</h2><p>Stories about love, distance, timing, and the words that arrive after the moment has passed.</p></div>
-    <article class="feature"><div><small>Upcoming release</small><h3>Still Here, Not the Same</h3><p>A new CHARISH JOY single · October 7, 2026</p></div><div class="date">07 · 10 · 26</div></article>
-    <div class="grid" style="margin-top:18px"><article class="card"><div><div class="tag">Released</div><h3>We Both Know</h3><p>An intimate story-pop single by CHARISH JOY.</p></div><div class="socials" aria-label="Listen to We Both Know"><a href="https://open.spotify.com/track/0qDxON7fAg5myTDyil4CmH" target="_blank" rel="noopener">Spotify ↗</a><a href="https://music.apple.com/us/album/we-both-know-single/6814546711" target="_blank" rel="noopener">Apple Music ↗</a><a href="https://music.apple.com/us/album/we-both-know-single/6814546711?app=itunes" target="_blank" rel="noopener">iTunes ↗</a><a href="https://music.amazon.co.uk/artists/B0HKHYJR2W/charish-joy" target="_blank" rel="noopener">Amazon Music ↗</a></div></article><article class="card"><div><div class="tag">Original music</div><h3>More stories are coming.</h3><p>Follow @itscharishjoy for new songs, lyric stories, and release updates.</p></div><a class="mini" href="#follow">FOLLOW CHARISH JOY →</a></article></div>
-  </div></section>
-
-  <section id="korean" class="korean"><div class="wrap"><div class="sectionhead"><h2>Korean songs</h2><p>CHARISH JOY in another language, with the same emotional storytelling at the center.</p></div><div class="songs">
-    <div class="song"><div class="songnum">01</div><div class="songtitle">아무 일도 없었던 것처럼</div><div class="status">Coming soon</div></div>
-    <div class="song"><div class="songnum">02</div><div class="songtitle">네가 온 이유</div><div class="status">Coming soon</div></div>
-    <div class="song"><div class="songnum">03</div><div class="songtitle">그래도 당신이라서</div><div class="status">Coming soon</div></div>
-    <div class="song"><div class="songnum">04</div><div class="songtitle">다음 계절에 우리</div><div class="status">Coming soon</div></div>
-    <div class="song"><div class="songnum">05</div><div class="songtitle">아직 여기 있는데</div><div class="status">Coming soon</div></div>
-  </div></div></section>
-
-  <section id="about"><div class="wrap about"><h2>About<br>CHARISH JOY</h2><div><p>CHARISH JOY is an independent artist creating intimate cinematic story-pop: songs built around one clear feeling, one human story, and the lines we wish we had said out loud.</p><p>Her growing catalog moves across English, Korean and Tagalog while keeping the same heart — emotionally direct songwriting and warm, cinematic storytelling.</p></div></div></section>
-
-  <section id="follow"><div class="wrap"><div class="sectionhead"><h2>Stay close.</h2><p>New music, lyric stories and release updates from CHARISH JOY.</p></div><div class="socials"><a href="https://open.spotify.com/track/0qDxON7fAg5myTDyil4CmH" target="_blank" rel="noopener">We Both Know on Spotify</a><a href="https://distrokid.com/hyperfollow/charishjoy/we-both-know/" target="_blank" rel="noopener">More music platforms</a><a href="https://www.instagram.com/itscharishjoy/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@itscharishjoy" target="_blank" rel="noopener">TikTok</a><a href="https://www.youtube.com/@itscharishjoy" target="_blank" rel="noopener">YouTube</a><a href="https://www.facebook.com/itscharishjoy" target="_blank" rel="noopener">Facebook</a></div></div></section>
-</main>
-<footer><div class="wrap foot"><div><strong>CHARISH JOY</strong> · Official Artist Website</div><div>© 2026 CHARISH JOY · @itscharishjoy</div></div></footer>
-</body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CHARISH JOY — Intimate Cinematic Story-Pop</title>
+<meta name="description" content="Songs that feel like scenes from real life. Listen to We Both Know by CHARISH JOY. Original music in English, Korean and Tagalog.">
+<meta name="theme-color" content="#F2EEE8"><meta property="og:title" content="CHARISH JOY — We Both Know"><meta property="og:description" content="Songs for the feelings we don’t always know how to say."><meta property="og:image" content="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F13761256--2E29D7B9-48BA-4BFC-B420F13C08070B80--0--2003875--file00000000de408209b7a297120949cfef.png?fm=jpg&q=75&s=0aaa57f54f6091303e405d2dee7c3b13&w=800">
+<style>
+:root{--ink:#151A22;--storm:#46566A;--ivory:#F2EEE8;--wine:#8E5661;--mist:#8797A8;--line:rgba(70,86,106,.23)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--ivory);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-width:100%}.wrap{width:min(1180px,calc(100% - 64px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(242,238,232,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.wordmark{font-family:Georgia,serif;letter-spacing:.22em;font-size:17px}.navlinks{display:flex;gap:28px;font-size:10px;letter-spacing:.15em;text-transform:uppercase}.navlinks a:hover{color:var(--wine)}
+.label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}.hero{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;padding:64px 0 72px}.hero .label{color:var(--wine);display:flex;align-items:center;gap:14px}.hero .label:before{content:"";width:32px;height:1px;background:var(--wine)}h1,h2,h3,p{margin:0}h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(66px,7.5vw,108px);letter-spacing:-.055em;line-height:.97;margin:28px 0}h1 em{font-weight:400;color:var(--wine)}.intro{font-family:Georgia,serif;font-size:23px;line-height:1.5;max-width:420px;color:var(--storm)}.hero-credit{margin-top:25px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}.actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:32px}.button{display:inline-flex;align-items:center;gap:30px;background:var(--ink);color:var(--ivory);padding:17px 24px;font-size:11px;font-weight:600;letter-spacing:.09em;transition:background .2s}.button:hover{background:var(--wine)}.textlink{font-size:11px;border-bottom:1px solid var(--storm);padding:8px 0}.art{position:relative;padding:0 0 24px 24px}.art:before{content:"";position:absolute;inset:24px 24px 0 0;background:var(--storm)}.art img{position:relative;width:100%;aspect-ratio:1;object-fit:cover;background:var(--storm)}.art-caption{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.17em;text-transform:uppercase;margin-top:18px;color:var(--storm)}
+.identity-strip{background:var(--ink);color:var(--ivory);padding:24px 0}.strip{display:flex;align-items:center;justify-content:space-between;gap:20px}.strip strong{font-family:Georgia,serif;font-weight:400;font-size:21px}.strip span{font-size:9px;letter-spacing:.17em;text-transform:uppercase;color:#b4bfca}
+section{padding:84px 0}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(38px,4.8vw,58px);letter-spacing:-.04em;line-height:1.1}.sectionhead p{font-size:13px;line-height:1.8;color:var(--storm);max-width:350px}.sectionhead .label{color:var(--wine);margin-bottom:14px}
+.listen{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}.player{width:100%;height:352px;border:0;border-radius:12px;background:var(--ink)}.platforms{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}.platforms a{display:flex;justify-content:space-between;align-items:center;padding:22px 10px 22px 0;border-bottom:1px solid var(--line);font-size:13px}.platforms a:nth-child(even){padding-left:24px}.platforms a:hover{color:var(--wine)}.platform-note{font-size:11px;color:var(--storm);line-height:1.8;margin-top:22px}
+.upcoming{border-top:1px solid var(--line);padding-top:36px;margin-top:52px;display:grid;grid-template-columns:1fr 2fr auto;gap:28px;align-items:center}.upcoming .label{color:var(--wine)}.upcoming h3{font-family:Georgia,serif;font-size:30px;font-weight:400}.upcoming p{font-size:11px;color:var(--storm);margin-top:10px}.release-date{font-family:Georgia,serif;font-size:22px;color:var(--storm)}
+.catalog{background:var(--storm);color:var(--ivory)}.catalog .sectionhead p{color:#d2d9e0}.catalog .sectionhead .label{color:#dbb8bf}.songs{border-top:1px solid rgba(242,238,232,.25)}.song{display:grid;grid-template-columns:60px 1fr auto;align-items:center;gap:20px;padding:24px 0;border-bottom:1px solid rgba(242,238,232,.25)}.songnum{font-size:10px;color:#bdc9d5}.songtitle{font-size:22px;font-weight:400;line-height:1.5;word-break:keep-all}.status{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#d2d9e0}
+.about{display:grid;grid-template-columns:260px 1fr;gap:78px;align-items:center}.portrait{border:1px solid var(--line);padding:10px}.portrait img{width:100%;height:auto}.about .label{color:var(--wine);margin-bottom:20px}.about h2{margin-bottom:24px}.about p{max-width:600px;font-size:15px;line-height:1.9;color:var(--storm)}.about p+p{margin-top:16px}.languages{font-size:10px!important;letter-spacing:.15em;text-transform:uppercase;margin-top:24px!important}
+.follow{border-top:1px solid var(--line);padding:64px 0}.follow-inner{display:flex;justify-content:space-between;align-items:center;gap:40px}.follow h2{font-size:44px}.follow p{font-size:12px;color:var(--storm);margin-top:14px}.socials{display:flex;flex-wrap:wrap;gap:20px}.socials a{font-size:11px;border-bottom:1px solid var(--line);padding:10px 0}.socials a:hover{color:var(--wine)}
+footer{border-top:1px solid var(--line);padding:28px 0}.footer{display:flex;justify-content:space-between;gap:24px;font-size:10px;color:var(--storm)}.footer strong{font-family:Georgia,serif;font-weight:400;letter-spacing:.19em}
+a:focus-visible{outline:2px solid var(--wine);outline-offset:5px}
+@media(max-width:760px){.wrap{width:calc(100% - 40px)}.nav{min-height:86px;flex-direction:column;justify-content:center;gap:14px;padding:16px 0}.wordmark{font-size:14px}.navlinks{gap:23px;font-size:9px}.hero{grid-template-columns:1fr;gap:36px;padding:38px 0 44px}h1{font-size:clamp(62px,17vw,90px);margin:22px 0}.intro{font-size:21px}.hero .label{font-size:9px}.hero-credit{font-size:10px}.actions{margin-top:26px;gap:20px}.art{max-width:440px;width:100%;margin:auto;padding:0 0 16px 16px}.art:before{inset:16px 16px 0 0}.strip{align-items:flex-start;flex-direction:column;gap:10px}.strip strong{font-size:20px}.strip span{font-size:8px;line-height:1.8}section{padding:58px 0}.sectionhead{display:block}.sectionhead p{margin-top:18px}.listen{grid-template-columns:1fr;gap:24px}.upcoming{grid-template-columns:1fr;gap:15px;margin-top:36px;padding-top:28px}.upcoming h3{font-size:28px}.release-date{font-size:18px}.song{grid-template-columns:28px 1fr;gap:12px;padding:20px 0}.songtitle{font-size:20px}.status{grid-column:2;font-size:8px}.about{grid-template-columns:1fr;gap:30px}.portrait{width:190px}.about h2{font-size:42px}.about p{font-size:14px}.follow-inner{display:block}.socials{margin-top:24px;gap:20px}.follow h2{font-size:38px}.footer{flex-direction:column;gap:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+</style></head><body>
+<nav><div class="wrap nav"><a class="wordmark" href="#top">CHARISH JOY</a><div class="navlinks"><a href="#music">Listen</a><a href="#korean">Korean songs</a><a href="#about">Artist</a><a href="#follow">Follow</a></div></div></nav>
+<main id="top"><div class="wrap hero"><div><div class="label">Out now · We Both Know</div><h1>We Both<br><em>Know.</em></h1><p class="intro">Songs for the feelings we don’t always know how to say.</p><p class="hero-credit">A single by CHARISH JOY</p><div class="actions"><a class="button" href="#music">Listen now <span>↓</span></a><a class="textlink" href="https://distrokid.com/hyperfollow/charishjoy/we-both-know/" target="_blank" rel="noopener">Choose a platform ↗</a></div></div><div><div class="art"><img src="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F13761256--2E29D7B9-48BA-4BFC-B420F13C08070B80--0--2003875--file00000000de408209b7a297120949cfef.png?fm=jpg&amp;q=75&amp;s=0aaa57f54f6091303e405d2dee7c3b13&amp;w=800" alt="We Both Know — CHARISH JOY official cover artwork" fetchpriority="high"></div><div class="art-caption"><span>CHARISH JOY</span><span>We Both Know · Single</span></div></div></div>
+<div class="identity-strip"><div class="wrap strip"><strong>Intimate Cinematic Story-Pop</strong><span>Songs that feel like scenes from real life.</span></div></div>
+<section id="music"><div class="wrap"><div class="sectionhead"><div><p class="label">Press play</p><h2>A story to stay with.</h2></div><p>Listen to “We Both Know,” or open it on your favorite music platform.</p></div><div class="listen"><iframe class="player" title="Listen to We Both Know by CHARISH JOY on Spotify" src="https://open.spotify.com/embed/track/0qDxON7fAg5myTDyil4CmH?utm_source=generator" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe><div><div class="platforms"><a href="https://open.spotify.com/track/0qDxON7fAg5myTDyil4CmH" target="_blank" rel="noopener">Spotify <span>↗</span></a><a href="https://music.apple.com/us/album/we-both-know-single/6814546711" target="_blank" rel="noopener">Apple Music <span>↗</span></a><a href="https://music.amazon.co.uk/artists/B0HKHYJR2W/charish-joy" target="_blank" rel="noopener">Amazon Music <span>↗</span></a><a href="https://music.apple.com/us/album/we-both-know-single/6814546711?app=itunes" target="_blank" rel="noopener">iTunes <span>↗</span></a></div><p class="platform-note">Your music, your way.<br>Listen on the platform you love.</p></div></div><article class="upcoming"><div class="label">The next chapter</div><div><h3>Still Here, Not the Same</h3><p>Upcoming CHARISH JOY single</p></div><div class="release-date">October 7, 2026</div></article></div></section>
+<section id="korean" class="catalog"><div class="wrap"><div class="sectionhead"><div><p class="label">In another language. The same heart.</p><h2>Korean songs</h2></div><p>A growing collection of stories, told in Korean.</p></div><div class="songs"><div class="song"><span class="songnum">01</span><h3 class="songtitle" lang="ko">아무 일도 없었던 것처럼</h3><span class="status">Coming soon</span></div><div class="song"><span class="songnum">02</span><h3 class="songtitle" lang="ko">네가 온 이유</h3><span class="status">Coming soon</span></div><div class="song"><span class="songnum">03</span><h3 class="songtitle" lang="ko">그래도 당신이라서</h3><span class="status">Coming soon</span></div><div class="song"><span class="songnum">04</span><h3 class="songtitle" lang="ko">다음 계절에 우리</h3><span class="status">Coming soon</span></div><div class="song"><span class="songnum">05</span><h3 class="songtitle" lang="ko">아직 여기 있는데</h3><span class="status">Coming soon</span></div></div></div></section>
+<section id="about"><div class="wrap about"><div class="portrait"><img src="profile.jpg" alt="CHARISH JOY artist portrait" loading="lazy"></div><div><p class="label">Meet the artist</p><h2>CHARISH JOY</h2><p>One feeling. One human story. The words we wish we had said out loud.</p><p>CHARISH JOY creates intimate cinematic story-pop, bringing emotionally direct songwriting to original music in English, Korean and Tagalog.</p><p class="languages">English · Korean · Tagalog</p></div></div></section>
+<section id="follow" class="follow"><div class="wrap follow-inner"><div><h2>Stay for the next story.</h2><p>New music, lyric stories and release updates · @itscharishjoy</p></div><div class="socials"><a href="https://www.instagram.com/itscharishjoy/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.tiktok.com/@itscharishjoy" target="_blank" rel="noopener">TikTok ↗</a><a href="https://www.youtube.com/@itscharishjoy" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.facebook.com/itscharishjoy" target="_blank" rel="noopener">Facebook ↗</a></div></div></section>
+</main><footer><div class="wrap footer"><strong>CHARISH JOY</strong><span>© 2026 CHARISH JOY · Official Artist Website</span></div></footer></body></html>
