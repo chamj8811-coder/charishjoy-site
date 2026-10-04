@@ -21,6 +21,17 @@ a:focus-visible{outline:2px solid var(--wine);outline-offset:5px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 
 .navlinks a{display:flex;align-items:center;min-height:44px}.textlink,.socials a{min-height:44px;display:inline-flex;align-items:center}.hero>div,.listen>div,.about>div{min-width:0}.portrait img{aspect-ratio:1}.navlinks{flex-wrap:wrap;justify-content:center}.platforms a{gap:12px}.platforms a:last-child:nth-child(odd){grid-column:1/-1}@media(max-width:360px){.navlinks{gap:14px}.platforms{grid-template-columns:1fr}.platforms a:nth-child(even){padding-left:0}.art-caption{letter-spacing:.08em}}
+
+/* Readable follow buttons */
+.follow-inner{align-items:flex-start}
+.follow p{font-size:15px;line-height:1.7}
+.socials{display:grid;grid-template-columns:repeat(2,minmax(140px,1fr));gap:12px;min-width:320px}
+.socials a{display:flex;justify-content:space-between;align-items:center;min-height:54px;padding:16px 20px;border:1px solid var(--line);background:rgba(255,255,255,.3);font-size:16px;font-weight:600;line-height:1.3;transition:background .2s,border-color .2s}
+.socials a:hover{background:rgba(135,151,168,.13);border-color:var(--storm);color:var(--ink)}
+.footer{font-size:13px;line-height:1.6}
+@media(max-width:760px){.socials{min-width:0;width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.socials a{font-size:15px;padding:15px 16px;min-height:54px}.follow p{font-size:14px}.footer{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.socials a{transition:none}}
+
 </style></head><body>
 <nav><div class="wrap nav"><a class="wordmark" href="#top">CHARISH JOY</a><div class="navlinks"><a href="#music">Listen</a><a href="#korean">Korean songs</a><a href="#about">Artist</a><a href="#follow">Follow</a></div></div></nav>
 <main id="top"><div class="wrap hero"><div><div class="label">Out now · We Both Know</div><h1>We Both<br><em>Know.</em></h1><p class="intro">Songs for the feelings we don’t always know how to say.</p><p class="hero-credit">A single by CHARISH JOY</p><div class="actions"><a class="button" href="#music">Listen now <span>↓</span></a><a class="textlink" href="https://distrokid.com/hyperfollow/charishjoy/we-both-know/" target="_blank" rel="noopener">Choose a platform ↗</a></div></div><div><div class="art"><img src="https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0230e9908e052c860e5b8dd99a" alt="We Both Know — CHARISH JOY official cover artwork" fetchpriority="high"></div><div class="art-caption"><span>CHARISH JOY</span><span>We Both Know · Single</span></div></div></div>
