@@ -76,6 +76,28 @@
     .korean{background:#eee4d9;color:#392b3b}
     .about p{color:#6e606b}.foot{color:#776b72}
 
+  
+    /* Fine-line artist details */
+    .hero{position:relative}
+    .hero:before{content:"";position:absolute;top:30px;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(147,112,68,.45),transparent);pointer-events:none}
+    .hero:after{content:"◆";position:absolute;bottom:20px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--gold);pointer-events:none}
+    .eyebrow{display:flex;align-items:center;gap:14px}
+    .eyebrow:before{content:"";width:36px;height:1px;background:var(--gold);flex-shrink:0}
+    .sectionhead h2:after{content:"";display:block;width:68px;height:1px;background:var(--gold);margin-top:20px}
+    .portrait{outline:1px solid rgba(147,112,68,.28);outline-offset:6px}
+    .feature{outline:1px solid rgba(147,112,68,.16);outline-offset:5px}
+    .card{position:relative}
+    .card:before{content:"";position:absolute;top:12px;left:12px;width:24px;height:24px;border-top:1px solid rgba(147,112,68,.55);border-left:1px solid rgba(147,112,68,.55);pointer-events:none}
+    .card:after{content:"";position:absolute;bottom:12px;right:12px;width:24px;height:24px;border-bottom:1px solid rgba(147,112,68,.55);border-right:1px solid rgba(147,112,68,.55);pointer-events:none}
+    .korean{position:relative}
+    .korean:before,.korean:after{content:"";position:absolute;left:24px;right:24px;height:1px;background:rgba(147,112,68,.23);pointer-events:none}
+    .korean:before{top:10px}.korean:after{bottom:10px}
+    .songnum{font-size:12px;width:28px;height:28px;border:1px solid rgba(147,112,68,.30);border-radius:50%;display:flex;align-items:center;justify-content:center}
+    .about h2:after{content:"";display:block;width:68px;height:1px;background:var(--gold);margin-top:24px}
+    footer{position:relative}
+    footer:before{content:"◆";position:absolute;top:-7px;left:50%;transform:translateX(-50%);background:var(--ivory);padding:0 14px;color:var(--gold);font-size:9px}
+    @media(max-width:760px){.hero:before{top:18px}.hero:after{bottom:18px}.eyebrow{gap:10px;font-size:9px;letter-spacing:.18em}.eyebrow:before{width:22px}}
+
   </style>
 </head>
 <body>
