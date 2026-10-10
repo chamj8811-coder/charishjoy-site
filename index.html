@@ -158,6 +158,16 @@ nav{background:rgba(244,240,235,.96)}
 @media(max-width:420px){.artist-title{font-size:clamp(72px,18vw,90px)}.artist-hero-visual{padding:35px 28px 65px}.hero-image-footer{left:20px;right:20px;letter-spacing:.12em}.navlinks{gap:15px;font-size:9px}.social-panel{grid-template-columns:1fr 1fr;gap:0 15px}.social-panel a{font-size:12px}.listening-links{grid-template-columns:1fr 1fr;gap:0 12px}.listening-links a{font-size:12px}.manifesto-inner p{font-size:24px}}
 @media(prefers-reduced-motion:reduce){.release-visual img{transition:none}}
 
+
+/* Image-fit correction: preserve complete artist portrait and cover artwork. */
+.about-portrait{max-width:440px;width:100%}
+.about-portrait img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;display:block}
+.release-visual{aspect-ratio:1 / 1;overflow:hidden;padding:0}
+.release-visual img{width:100%;height:100%;object-fit:contain;object-position:center;transform:none!important}
+.artist-hero-visual>img{object-fit:contain;object-position:center}
+.next-release img{object-fit:contain;object-position:center}
+.editorial-cover img{object-fit:contain;object-position:center}
+@media(max-width:760px){.about-portrait{max-width:min(100%,440px)}.release-visual{aspect-ratio:1 / 1}}
 </style></head><body>
 <nav><div class="wrap nav"><a class="wordmark" href="#top">CHARISH JOY</a><div class="navlinks"><a href="#discography">Music</a><a href="#about">The Artist</a><a href="stories.html">Stories &amp; Feelings</a><a href="#follow">Connect</a></div></div></nav>
 <main id="top">
